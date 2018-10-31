@@ -15,6 +15,12 @@ namespace TournamentLib
         public List<Team> GetTeams() {
             return teams;
         }
+
+        public Team GetTeam (string teamName)
+        {
+            Team team = null;
+            return team;
+        }
         public void AddTeam(Team team)
         {
             teams.Add(team);

@@ -25,6 +25,11 @@ namespace TournamentLib
             }
             return getMatch;
         }
+        public Match GetMatch(string team)
+        {
+            Match match = null;
+            return match;
+        }
 
         public bool IsMatchesFinished()
         {
