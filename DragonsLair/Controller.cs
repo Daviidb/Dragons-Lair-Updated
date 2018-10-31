@@ -61,7 +61,7 @@ namespace DragonsLair
             List<Team> newTeams = new List<Team>();
 
             int numberOfRound = tournament.GetNumberOfRounds();
-            Round lastRound = null;
+            Round lastRound = null; 
             Random rnd = new Random();
             bool isRoundFinished = true;
             Team freeRider = null;
