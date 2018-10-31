@@ -128,20 +128,12 @@ namespace DragonsLair
             }
         }
 
-        private void SaveMatch()
+        public void SaveMatch(string tournamentName, int roundNumber, string team1, string team2, string winningTeam)
         {
-            Console.Write("Angiv navn på turnering: ");
-            string tournamentName = Console.ReadLine();
-            Console.Write("Angiv runde: ");
-            int round = int.Parse(Console.ReadLine());
-            Console.Write("Angiv vinderhold: ");
-            string winner = Console.ReadLine();
-            Console.Clear();
-            control.SaveMatch(tournamentName, round, winner);
+            // Do not implement this method
         }
 
-
-        public string paddedText(string text, int length)
+            public string paddedText(string text, int length)
         {
             int runs = 0;
             StringBuilder sb = new StringBuilder();
