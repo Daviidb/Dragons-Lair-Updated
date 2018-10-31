@@ -133,7 +133,7 @@ namespace DragonsLair
             // Do not implement this method
         }
 
-            public string paddedText(string text, int length)
+        public string paddedText(string text, int length)
         {
             int runs = 0;
             StringBuilder sb = new StringBuilder();

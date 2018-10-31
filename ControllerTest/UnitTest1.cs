@@ -41,7 +41,6 @@ namespace ControllerTest
             Assert.AreEqual(1, currentTournament.GetNumberOfRounds());
             Assert.AreEqual(9, currentTournament.GetTeams().Count);
         }
-
         [TestMethod]
         public void TestOddNumberOfTeamsGivesFreeRider()
         {
@@ -77,6 +76,5 @@ namespace ControllerTest
             Match m = currentTournament.GetRound(1).GetMatch(winnerName);
             Assert.AreEqual(winnerName, m.Winner.Name);
         }
-
     }
 }

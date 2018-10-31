@@ -7,7 +7,6 @@ namespace TournamentTest
     [TestClass]
     public class DragonsLairTests
     {
-        
         Tournament currentTournament;
         [TestInitialize]
         public void SetupForTest()
@@ -55,6 +54,7 @@ namespace TournamentTest
             }
             Assert.AreEqual(true, matchesFinished);
         }
+       
 
     }
 }
