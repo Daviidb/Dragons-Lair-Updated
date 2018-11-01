@@ -53,13 +53,14 @@ namespace DragonsLair
         public void ScheduleNewRound(string tournamentName, bool printNewMatches = true)
         {
             Tournament tournament = tournamentRepository.GetTournament(tournamentName);
-            tournament.SetupTestTeams(); // Setup 8 teams
+            
             Round newRound = new Round();
             Match newMatch;
             
             List<Team> tempTeams = new List<Team>(tournament.GetTeams());
             List<Team> newTeams = new List<Team>();
 
+            
             int numberOfRound = tournament.GetNumberOfRounds();
             Round lastRound = null; 
             Random rnd = new Random();
